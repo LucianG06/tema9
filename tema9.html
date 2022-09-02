@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 
-<body style="background-color: rgb(213, 212, 212);">
+<body style="background-color: rgb(213, 212, 212)">
     <div class="slideshow-container">
 
         <div class="mySlides fade">
@@ -44,17 +44,7 @@
             </div>
         </div>
 
-        <div class="mySlides fade">
-            <img src="4.jpg" style="width:100%">
-            <div class="big-text">Book your next trip</div>
-            <div class="small-text">
-                An arrangement you make to have a hotel room, tickets, etc. at a<br>
-                particular time in future
-            </div>
-        </div>
-
     </div>
-    <br>
 
     <script>
         let slideIndex = 0;
@@ -77,6 +67,50 @@
             setTimeout(showSlides, 6000);
         }
     </script>
+
+    <div class="container">
+        <table class="center" style="width:90%; position: relative; top: 15px ">
+            <tr>
+                <td>Leave From</td>
+                <td>To</td>
+                <td>Depart</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <select class="form-select" aria-label="Default select example">
+                        <option value="1">Brazil</option>
+                        <option value="2">Italy</option>
+                        <option value="3">Romania</option>
+                        <option value="4">Germany</option>
+                        <option value="5">Spain</option>
+                    </select>
+                </td>
+                <td>
+                    <select class="form-select" aria-label="Default select example">
+                        <option value="1">Brazil</option>
+                        <option value="2">Italy</option>
+                        <option value="3">Romania</option>
+                        <option value="4">Germany</option>
+                        <option value="5">Spain</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="date" id="start" name="trip-start" 
+                    value="2022-07-22" min="2022-01-01" max="2024-12-31" 
+                    style="width:100%">
+                </td>
+                <td>
+                    <button class="button">SEARCH</button>
+                </td>
+
+            </tr>
+        </table>
+
+
+    </div>
+
+    
 </body>
 
 </html>
